@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+</head>
+<body>
+<script type="text/javascript">
+    let array = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко'];
+    for (let i = 0; i < array.length; i++) {
+        switch (array[i]) {
+            case 'молоко':
+                console.log('Плохо')
+                break;
+            case 'пиво':
+                console.log('Хорошо')
+                break;
+        }
+    }
+</script>
+<script type="text/javascript">
+    let firstArray = [1, 5, 12, 4, 3];
+    let secondArray = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let thirdArray = [3, 10, 17];
+
+    function avarage(array) {
+        let total = 0
+        for (let i = 0; i < array.length; i++) {
+            total += array[i]
+        }
+        let avarage = total / array.length
+        console.log(avarage)
+    }
+    avarage(firstArray);
+    avarage(secondArray);
+    avarage(thirdArray);
+</script>
+<script type="text/javascript">
+    let puzzle = prompt('У квадратного стола отпилили один угол. Сколько теперь углов у него стало?')
+    switch (puzzle) {
+        case '5':
+            alert('Ответ верный')
+            break;
+        case 'пять':
+            alert('Ответ верный')
+            break
+        case 'Пять':
+            alert('Ответ верный')
+            break
+        default:
+            alert('Ответ неверный')
+    }
+</script>
+<script type="text/javascript">
+    function print(data) {
+        console.log(data)
+    }
+    let duck = {
+        name: 'Дональд',
+        color: 'белый',
+        age: '1',
+        toStr: function () {
+            print(this.name + ', ' + this.color + ', ' + this.age + ' год')
+        },
+        say: function () {
+            print('кря кря')
+        }
+    }
+    duck.toStr()
+    duck.say()
+</script>
+</body>
+</html>
